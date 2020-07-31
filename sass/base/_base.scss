@@ -1,0 +1,20 @@
+// basic definitions about the entire project
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  /* this defines what one rem is */
+  /* font-size: 10px; */
+  /* this is the root font size, if we use rem along the project 1rem would be equal to 10px */
+}
+
+body {
+  box-sizing: border-box;
+}
