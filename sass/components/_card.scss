@@ -16,6 +16,7 @@
     width: 100%;
     backface-visibility: hidden; // hides the back part of an element
     border-radius: 3px;
+    overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
     &--front {
@@ -47,7 +48,10 @@
     background-size: cover;
     height: 23rem;
     background-blend-mode: screen; // blends the colors only works in safari chrome and firefox
-    &--1 {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &-1 {
+      //   background-color: $color-secondary-light;
       background-image: linear-gradient(
           to right bottom,
           $color-secondary-light,
@@ -55,11 +59,12 @@
         ),
         url(../img/nat-5.jpg);
     }
-    &--2 {
-      background-image: url(../img/nat-5.jpg);
-    }
-    &--3 {
-      background-image: url(../img/nat-5.jpg);
-    }
+  }
+
+  &-2 {
+    background-image: url(../img/nat-5.jpg);
+  }
+  &-3 {
+    background-image: url(../img/nat-5.jpg);
   }
 }
