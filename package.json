@@ -7,7 +7,7 @@
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
   },
-  "author": "",
+  "author": "Gabriela",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
